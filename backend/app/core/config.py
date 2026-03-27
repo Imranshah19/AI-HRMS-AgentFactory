@@ -23,6 +23,7 @@ class Settings(BaseSettings):
     APP_ENV: Literal["development", "staging", "production"] = "development"
     DEBUG: bool = False
     LOG_LEVEL: Literal["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"] = "INFO"
+    PORT: int = 8000  # Overridden by Railway / any PaaS via $PORT env var
 
     # ── URLs ─────────────────────────────────────────────────────────────────
     FRONTEND_URL: str = "http://localhost:3000"
