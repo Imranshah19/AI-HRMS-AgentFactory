@@ -7,7 +7,7 @@ import {
   LayoutDashboard, Users, Building2, Clock, CalendarDays,
   Timer, DollarSign, FileText, UserPlus, BarChart3,
   GraduationCap, Package, Settings, ChevronLeft,
-  ChevronRight, LogOut, Brain,
+  ChevronRight, LogOut, Brain, Bot,
 } from 'lucide-react';
 import { toast } from 'sonner';
 
@@ -85,6 +85,12 @@ const NAV_GROUPS: NavGroup[] = [
       { label: 'Reports',  href: '/reports',  icon: BarChart3,
         permission: { module: 'analytics', action: 'read' } },
       { label: 'Settings', href: '/settings', icon: Settings },
+    ],
+  },
+  {
+    heading: 'AGENT FACTORY',
+    items: [
+      { label: 'Agent Dashboard', href: '/agent-dashboard', icon: Bot },
     ],
   },
 ];

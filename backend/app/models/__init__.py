@@ -91,6 +91,9 @@ from app.models.notification import Notification
 # ── Audit ─────────────────────────────────────────────────────────────────────
 from app.models.audit import AuditLog
 
+# ── Agent Factory ─────────────────────────────────────────────────────────────
+from app.models.agent_log import AgentLog
+
 
 # ── Public API ────────────────────────────────────────────────────────────────
 # Explicit __all__ lets IDEs, linters, and Alembic know what's exported.
@@ -159,4 +162,7 @@ __all__ = [
 
     # Audit
     "AuditLog",
+
+    # Agent Factory
+    "AgentLog",
 ]

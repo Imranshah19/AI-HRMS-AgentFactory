@@ -75,3 +75,7 @@ v1_router.include_router(ai_attrition_router)
 v1_router.include_router(ai_performance_router)
 v1_router.include_router(ai_chatbot_router)
 v1_router.include_router(ai_analytics_router)
+
+# ── Agent Factory (/agent/*) ───────────────────────────────────────────────────
+from app.api.v1.agents.router import agent_router  # noqa: E402
+v1_router.include_router(agent_router)

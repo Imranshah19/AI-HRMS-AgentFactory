@@ -78,7 +78,7 @@ class Settings(BaseSettings):
 
     # ── First Super-Admin ─────────────────────────────────────────────────────
     FIRST_SUPERADMIN_EMAIL: str = "admin@hrms.com"
-    FIRST_SUPERADMIN_PASSWORD: str = "Admin@1234!"
+    FIRST_SUPERADMIN_PASSWORD: str = "imran12345"
     FIRST_SUPERADMIN_FIRST_NAME: str = "System"
     FIRST_SUPERADMIN_LAST_NAME: str = "Admin"
 
